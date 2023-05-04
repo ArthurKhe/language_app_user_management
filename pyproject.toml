@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "language app user management"
+version = "0.1.0"
+description = ""
+authors = ["Arthur Khe <arthur4ik.khe@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.95.1"}
+motor = "^3.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
