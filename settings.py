@@ -1,6 +1,12 @@
 import os
 from dotenv import load_dotenv
+from pydantic import BaseSettings
 
 load_dotenv()
 
-MONGO_URL = os.getenv("MONGO_URL", default="mongodb://localhost:27017/language_app")
+
+class Settings(BaseSettings):
+    MONGO_URL = os.getenv("MONGO_URL", default="mongodb://root:example@127.0.0.1:27017")
+
+
+settings = Settings()
