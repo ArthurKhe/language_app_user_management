@@ -1,4 +1,6 @@
 from pydantic import BaseModel
+from typing import List
+from schemas.category import Category
 
 
 class User(BaseModel):
